@@ -1,4 +1,5 @@
 git add .
 git commit -m 'first_commit'
+git remote rm origin
 git remote add origin https://github.com/findingsea/myRepoForBlog.git
-git push origin master
+git push -u origin master
