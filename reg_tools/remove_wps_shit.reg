@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+[-HKEY_CLASSES_ROOT\lnkfile\shellex\ContextMenuHandlers\qingshellext]
+@="{67F4D210-BFC2-4ADD-9A2A-C9B9E1F42C4F}"
+[-HKEY_CURRENT_USER\Software\Classes\*\ShellEx\ContextMenuHandlers\qingshellext]
+@="{67F4D210-BFC2-4ADD-9A2A-C9B9E1F42C4F}"
+[-HKEY_CURRENT_USER\Software\Classes\Directory\shellex\ContextMenuHandlers\qingshellext]
+@="{67F4D210-BFC2-4ADD-9A2A-C9B9E1F42C4F}"
