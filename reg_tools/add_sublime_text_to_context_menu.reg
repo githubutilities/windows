@@ -1,0 +1,42 @@
+Windows Registry Editor Version 5.00
+
+; Created by: ccx
+; Add sublime text to context menu and use "S" as the shortcut
+; Only when command "subl" is available in the %PATH% variable
+
+
+
+
+; Modify the part of register when Background(like Desktop) is right-clicked
+; Drop the key if existed
+[-HKEY_CLASSES_ROOT\Directory\Background\shell\sublime]
+
+; Add the key and use "S" as the shortcut
+[HKEY_CLASSES_ROOT\Directory\Background\shell\sublime]
+@="Open &sublime here"
+
+; Add the command to be executed when the menu is clicked
+[HKEY_CLASSES_ROOT\Directory\Background\shell\sublime\command]
+@="cmd.exe /s /c \"pushd \"%V\" & start subl .\""
+
+
+
+
+[-HKEY_CLASSES_ROOT\Directory\shell\sublime]
+
+[HKEY_CLASSES_ROOT\Directory\shell\sublime]
+@="Open &sublime here"
+
+[HKEY_CLASSES_ROOT\Directory\shell\sublime\command]
+@="cmd.exe /s /c \"pushd \"%V\" & start subl .\""
+
+
+
+
+[-HKEY_CLASSES_ROOT\Drive\shell\sublime]
+
+[HKEY_CLASSES_ROOT\Drive\shell\sublime]
+@="Open &sublime here"
+
+[HKEY_CLASSES_ROOT\Drive\shell\sublime\command]
+@="cmd.exe /s /c \"pushd \"%V\" & start subl .\""

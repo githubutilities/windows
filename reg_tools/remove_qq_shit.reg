@@ -1,0 +1,23 @@
+Windows Registry Editor Version 5.00
+
+; remove 64 bit version qq context menu
+[-HKEY_CLASSES_ROOT\AllFilesystemObjects\shellex\ContextMenuHandlers\QQShellExt64]
+@="{5D639F05-2181-4B58-A850-9F7E5C79D5DE}"
+
+[-HKEY_CLASSES_ROOT\Folder\shellex\ContextMenuHandlers\QQShellExt64]
+@="{5D639F05-2181-4B58-A850-9F7E5C79D5DE}"
+
+[-HKEY_CLASSES_ROOT\lnkfile\shellex\ContextMenuHandlers\QQShellExt64]
+@="{5D639F05-2181-4B58-A850-9F7E5C79D5DE}"
+
+
+
+;remove 32 bit version qq context menu
+[-HKEY_CLASSES_ROOT\AllFilesystemObjects\shellex\ContextMenuHandlers\QQShellExt]
+@="{53D2405C-48AB-4C8A-8F59-CE0610F13BBC}"
+
+[-HKEY_CLASSES_ROOT\Folder\ShellEx\ContextMenuHandlers\QQShellExt]
+@="{53D2405C-48AB-4C8A-8F59-CE0610F13BBC}"
+
+[-HKEY_CLASSES_ROOT\lnkfile\shellex\ContextMenuHandlers\QQShellExt]
+@="{53D2405C-48AB-4C8A-8F59-CE0610F13BBC}"

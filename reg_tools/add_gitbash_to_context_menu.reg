@@ -1,0 +1,42 @@
+Windows Registry Editor Version 5.00
+
+; Created by: ccx
+; Add git bash to context menu and use "G" as the shortcut
+; Only when "git bash.vbs" is available in the %PATH% variable
+
+
+
+
+; Modify the part of register when Background(like Desktop) is right-clicked
+; Drop the key if existed
+[-HKEY_CLASSES_ROOT\Directory\Background\shell\gitbash]
+
+; Add the key and use "G" as the shortcut
+[HKEY_CLASSES_ROOT\Directory\Background\shell\gitbash]
+@="Open &gitbash here"
+
+; Add the command to be executed when the menu is clicked
+[HKEY_CLASSES_ROOT\Directory\Background\shell\gitbash\command]
+@="cmd.exe /s /c \"pushd \"%V\" & \"Git Bash.vbs\" \""
+
+
+
+
+[-HKEY_CLASSES_ROOT\Directory\shell\gitbash]
+
+[HKEY_CLASSES_ROOT\Directory\shell\gitbash]
+@="Open &gitbash here"
+
+[HKEY_CLASSES_ROOT\Directory\shell\gitbash\command]
+@="cmd.exe /s /c \"pushd \"%V\" & \"Git Bash.vbs\" \""
+
+
+
+
+[-HKEY_CLASSES_ROOT\Drive\shell\gitbash]
+
+[HKEY_CLASSES_ROOT\Drive\shell\gitbash]
+@="Open &gitbash here"
+
+[HKEY_CLASSES_ROOT\Drive\shell\gitbash\command]
+@="cmd.exe /s /c \"pushd \"%V\" & \"Git Bash.vbs\" \""
