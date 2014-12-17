@@ -8,7 +8,7 @@ MYSQL_HOME		C:\xampp\mysql
 MINGW_HOME		C:\MinGW
 NMAP_HOME     	C:\Users\will\backup\programs\nmap-6.47;C:\Users\will\AppData\Roaming\npm;
 NODE_JS_HOME  	C:\Users\will\backup\programs\nodejs
-PATH          	%VIM_HOME%;%GIT_HOME%;%UTILITIES_HOME%;%FFMPEG_HOME%\bin;%NMAP_HOME%;%PHP_HOME%;%COMPOSER_HOME%;%SUBLIME_HOME%;%JAVA_HOME%\bin;%NODE_JS_HOME%;%MYSQL_HOME%\bin;%MINGW_HOME%\bin;%CYGWIN_HOME%;
+PATH          	%VIM_HOME%;%GIT_HOME%;%UTILITIES_HOME%;%FFMPEG_HOME%\bin;%NMAP_HOME%;%PHP_HOME%;%COMPOSER_HOME%;%SUBLIME_HOME%;%JAVA_HOME%\bin;%NODE_JS_HOME%;%MYSQL_HOME%\bin;%CYGWIN_HOME%\bin;
 PHP_HOME      	C:\xampp\php
 SUBLIME_HOME  	C:\Users\will\backup\programs\sublime_text_2_64
 UTILITIES_HOME	C:\Users\will\backup\programs\utilities\windows
