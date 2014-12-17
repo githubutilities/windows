@@ -3,3 +3,7 @@ Windows Registry Editor Version 5.00
 [-HKEY_CLASSES_ROOT\*\shellex\ContextMenuHandlers\YunShellExt]
 
 [-HKEY_CLASSES_ROOT\Directory\shellex\ContextMenuHandlers\YunShellExt]
+
+; Remove Baidu Sync's shit
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shellex\ContextMenuHandlers\NetdiskShellExt]
+@="{3002BC23-D82D-46EB-80F5-4F4081CCC3AD}"

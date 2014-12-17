@@ -2,7 +2,7 @@ Windows Registry Editor Version 5.00
 
 ; Created by: ccx
 ; Add sublime text to context menu and use "S" as the shortcut
-; Only when command "subl" is available in the %PATH% variable
+; Only when command "subl.exe" is available in the %PATH% variable
 
 
 
@@ -12,8 +12,12 @@ Windows Registry Editor Version 5.00
 [-HKEY_CLASSES_ROOT\Directory\Background\shell\sublime]
 
 ; Add the key and use "S" as the shortcut
+; Setting subl.exe as its logo
+; Setting the position of the context menu to top
 [HKEY_CLASSES_ROOT\Directory\Background\shell\sublime]
 @="Open &sublime here"
+"Icon"="subl.exe"
+"Position"="Top"
 
 ; Add the command to be executed when the menu is clicked
 [HKEY_CLASSES_ROOT\Directory\Background\shell\sublime\command]
@@ -26,6 +30,8 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\Directory\shell\sublime]
 @="Open &sublime here"
+"Icon"="subl.exe"
+"Position"="Top"
 
 [HKEY_CLASSES_ROOT\Directory\shell\sublime\command]
 @="cmd.exe /s /c \"pushd \"%V\" & start subl .\""
@@ -37,6 +43,8 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\Drive\shell\sublime]
 @="Open &sublime here"
+"Icon"="subl.exe"
+"Position"="Top"
 
 [HKEY_CLASSES_ROOT\Drive\shell\sublime\command]
 @="cmd.exe /s /c \"pushd \"%V\" & start subl .\""

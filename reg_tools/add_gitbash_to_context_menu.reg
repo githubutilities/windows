@@ -14,6 +14,7 @@ Windows Registry Editor Version 5.00
 ; Add the key and use "G" as the shortcut
 [HKEY_CLASSES_ROOT\Directory\Background\shell\gitbash]
 @="Open &gitbash here"
+"Position"="Top"
 
 ; Add the command to be executed when the menu is clicked
 [HKEY_CLASSES_ROOT\Directory\Background\shell\gitbash\command]
@@ -26,6 +27,7 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\Directory\shell\gitbash]
 @="Open &gitbash here"
+"Position"="Top"
 
 [HKEY_CLASSES_ROOT\Directory\shell\gitbash\command]
 @="cmd.exe /s /c \"pushd \"%V\" & \"Git Bash.vbs\" \""
@@ -37,6 +39,7 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\Drive\shell\gitbash]
 @="Open &gitbash here"
+"Position"="Top"
 
 [HKEY_CLASSES_ROOT\Drive\shell\gitbash\command]
 @="cmd.exe /s /c \"pushd \"%V\" & \"Git Bash.vbs\" \""
