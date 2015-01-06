@@ -1,0 +1,14 @@
+Windows Registry Editor Version 5.00
+
+; Created by: ccx
+; Add bash to context menu and use "B" as the shortcut
+; Only when "bash is available in the %PATH% variable
+
+
+; Modify the part of register when Background(like Desktop) is right-clicked
+; Drop the key if existed
+[-HKEY_CLASSES_ROOT\Directory\Background\shell\bash]
+
+[-HKEY_CLASSES_ROOT\Directory\shell\bash]
+
+[-HKEY_CLASSES_ROOT\Drive\shell\bash]

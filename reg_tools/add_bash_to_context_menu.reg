@@ -1,0 +1,45 @@
+Windows Registry Editor Version 5.00
+
+; Created by: ccx
+; Add bash to context menu and use "B" as the shortcut
+; Only when "bash is available in the %PATH% variable
+
+
+
+
+; Modify the part of register when Background(like Desktop) is right-clicked
+; Drop the key if existed
+[-HKEY_CLASSES_ROOT\Directory\Background\shell\bash]
+
+; Add the key and use "B" as the shortcut
+[HKEY_CLASSES_ROOT\Directory\Background\shell\bash]
+@="Open &bash here"
+"Position"="Top"
+
+; Add the command to be executed when the menu is clicked
+[HKEY_CLASSES_ROOT\Directory\Background\shell\bash\command]
+@="cmd.exe /s /c \"pushd \"%V\" & start bash -i\""
+
+
+
+
+[-HKEY_CLASSES_ROOT\Directory\shell\bash]
+
+[HKEY_CLASSES_ROOT\Directory\shell\bash]
+@="Open &bash here"
+"Position"="Top"
+
+[HKEY_CLASSES_ROOT\Directory\shell\bash\command]
+@="cmd.exe /s /c \"pushd \"%V\" & start bash -i\""
+
+
+
+
+[-HKEY_CLASSES_ROOT\Drive\shell\bash]
+
+[HKEY_CLASSES_ROOT\Drive\shell\bash]
+@="Open &bash here"
+"Position"="Top"
+
+[HKEY_CLASSES_ROOT\Drive\shell\bash\command]
+@="cmd.exe /s /c \"pushd \"%V\" & start bash -i\""
